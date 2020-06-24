@@ -1,0 +1,59 @@
+.checkout-item {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 1fr;
+    padding: 0 10rem;
+
+    &__img-container {
+        width: 100%;
+        height: calc((100vw - 20rem) * 3 / 13);
+        padding: 2rem;
+
+        &--img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-family: "Lato", sans-serif;
+        color: #4b4b4b;
+    }
+
+    &__quantity {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-family: "Lato", sans-serif;
+        color: #4b4b4b;
+
+        .arrow {
+            cursor: pointer;
+            font-size: 2.5rem;
+        }
+
+        &--value {
+            margin: 0 1rem;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-family: "Lato", sans-serif;
+        color: #4b4b4b;
+    }
+
+    &__remove {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-family: "Lato", sans-serif;
+        color: #4b4b4b;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}

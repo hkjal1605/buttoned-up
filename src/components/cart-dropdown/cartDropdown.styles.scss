@@ -1,0 +1,75 @@
+.cart-dropdown {
+    padding-bottom: 2rem;
+    position: absolute;
+    width: 32rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #ffecec, #ffcaca, #ff7675, #ff5453);
+    top: 8rem;
+    right: 4rem;
+    z-index: 100;
+    border: .5rem solid #130f40;
+
+    &__item-list {
+        height: 83%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 1.5rem;               /* width of the entire scrollbar */
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #ff6b6b;        /* color of the tracking area */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #FF0099;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* color of the scroll thumb */
+            border-radius: 2rem;       /* roundness of the scroll thumb */
+            border: 3px solid #ff6b6b;  /* creates padding around scroll thumb */
+        }
+    }
+
+    &__empty-cart {
+        text-align: center;
+        font-size: 2rem;
+        margin: 8rem auto;
+        text-transform: uppercase;
+        font-family: Lato, sans-serif;
+        line-height: 3rem;
+    }
+
+    &__button {
+        margin-top: auto;
+        width: 100%;
+        display: block;
+        width: 90%;
+        outline: none;
+        border: none;
+        font-size: 2rem;
+        font-family: 'Lato', sans-serif;
+        padding: 2rem 0;
+        overflow: hidden;
+        color: #e0fcfb;
+        backface-visibility: hidden;
+        box-shadow: 0 2rem 2rem rgba(0,0,0,.4);
+
+        background-image: linear-gradient(45deg, #f27a8e 0%, #ED4C67 20%, #B53471 40%, #833471 60%, #6F1E51 80%);
+        background-size: 225%;
+        transition: all .6s;
+
+        &:hover {
+            background-position: 100%;
+            transform: scale(1.05);
+            cursor: pointer;
+            box-shadow: 0 2rem 4rem rgba(0,0,0,.6);
+    }
+    }
+}

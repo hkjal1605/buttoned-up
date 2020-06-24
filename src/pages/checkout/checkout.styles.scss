@@ -1,0 +1,46 @@
+.checkout-page {
+
+    &__header {
+        padding: 3rem 10rem;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr 1fr;
+
+        &--block {
+            text-align: left;
+            font-size: 2.5rem;
+            font-family: 'Lato', sans-serif;
+            color: #4b4b4b;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__header-bottom {
+        height: 4px;
+        width: 100%;
+        grid-column: 1 / -1;
+        background-color: #4b4b4b;
+    }
+
+    .total {
+        display: flex;
+        justify-content: flex-end;
+        font-family: 'Lato', serif;
+        font-size: 4.5rem;
+        font-weight: 700;
+        color: #4b4b4b;
+        padding: 3rem 18rem;
+    }
+
+    .warning {
+        text-align: center;
+        color: orangered;
+        font-size: 2.5rem;
+        font-weight: 300;
+        padding: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    button {
+        margin-bottom: 3rem;
+    }
+}

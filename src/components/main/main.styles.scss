@@ -1,0 +1,94 @@
+.main {
+    margin-top: 2rem;
+    height: 40vw;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
+    grid-template-rows: repeat(12, [row-start] 1fr [row-end]);
+
+
+    &__img--1 {
+        height: 100%;
+        width: 100%; 
+        grid-column: col-start 1 / col-end 6;
+        grid-row: 1 / -1;
+    }
+
+    &__img--2 {
+        width: 100%;
+        height: 100%;
+        grid-column: col-start 5 / col-end 8;
+        grid-row: row-start 2 / row-end 11;
+        z-index: 2;
+        box-shadow: 0 2rem 4rem rgba(0,0,0,.5);
+
+        outline: 1.5rem solid #32ff7e;
+        outline-style: groove;
+        outline-offset: 2rem;
+    }
+
+    &__img--4 {
+        height: 100%;
+        width: 100%;
+        grid-column: col-start 7 / col-end 12;
+        grid-row: 1 / -1;
+    }
+
+    &__content {
+        z-index: 3;
+        grid-column: col-start 3 / col-end 10;
+        grid-row: row-start 5 / row-end 8;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-family: 'Pacifico', cursive;
+        letter-spacing: 4px;
+        background-image: linear-gradient(to right bottom, #32ff7e, #18dcff);
+        color: #006b7e;
+        padding: 1.5rem 6rem;
+        box-shadow: 0 2rem 2rem rgba(0,0,0, .4);
+        border-radius: .6rem 3rem .6rem;
+
+        outline: 1.5rem solid #7d5fff;
+        outline-style: groove;
+        outline-offset: 2rem;
+    }
+
+    &__button {
+        width: 40%;
+        text-decoration: none;
+        padding: 2rem;
+        font-size: 2rem;
+        background-color: #7efff5;
+        outline: none;
+        border-radius: 10rem;
+        color: #3a1fb5;
+        font-weight: 700;
+        box-shadow: 0 2rem 4rem rgba(0,0,0, .5);
+
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+        background-size: 225%;
+        transition: all .4s;
+
+        &:hover{
+			background-position: 100%;
+            transform: translateX(1rem);
+            color: #4b4b4b;
+            cursor: pointer;
+        }
+        
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateX(1rem) translateY(-1px);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2)
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.collection-page {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-family: 'Pacifico', cursive;
+        font-size: 4rem;
+        font-weight: 300;
+        padding: 3rem;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 4rem;
+        justify-content: center;
+    }
+}

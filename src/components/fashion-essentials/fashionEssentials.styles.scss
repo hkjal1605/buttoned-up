@@ -1,0 +1,8 @@
+.essentials {
+    margin-top: 2rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 25vw);
+    grid-gap: 2.5rem;
+}

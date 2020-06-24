@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    padding: 0 2rem;
+    background-image: linear-gradient(to right bottom, #32ff7e, #18dcff);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+
+    &__logo {
+        display: flex;
+
+        &--img {
+            height: 4rem;
+        }
+
+        &--name {
+            font-size: 2rem;
+            font-family: 'Pacifico', cursive;
+            color: #2800d6;
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__options {
+        text-transform: uppercase;
+        color: #2800d6;
+        font-family: Lato, sans-serif;
+        font-weight: 700;
+        font-size: 1.4rem;
+        padding: 2rem 1.4rem;
+        cursor: pointer;
+        text-decoration: none;
+
+        transition: all .4s;
+
+        &:hover {
+            background-color: rgba(#ece9fb, .7);
+        }
+    }
+}
+
+.link {
+    
+    text-decoration: none;
+}
