@@ -1,5 +1,5 @@
 .item {
-    height: 90%;
+    height: 100%;
     margin-top: .5rem;
     position: relative;
     text-align: center;
@@ -25,7 +25,7 @@
 
     &:hover .add {
         visibility: visible;
-        top: 60%;
+        top: 40%;
         opacity: .9;
     }
 
@@ -53,8 +53,9 @@
         display: inline-block;
         position: absolute;
         padding: 1rem 0;
-        top: 80%;
+        top: 60%;
         left: 50%;
+        width: 65%;
         transform: translateX(-50%);
         opacity: 0;
         visibility: hidden;

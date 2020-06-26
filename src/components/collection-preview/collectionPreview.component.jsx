@@ -1,12 +1,14 @@
 import React from 'react';
 
+import { withRouter } from 'react-router-dom';
+
 import './collectionPreview.styles.scss';
 
 import CollectionItem from '../collection-item/collectionItem.component';
 
-const CollectionPreview = ({ title, items, color_1, color_2 }) => (
-    <div className='container' style={{backgroundImage: `linear-gradient(110deg, ${color_1} 0, ${color_1} 60%, transparent 60%, transparent 61%, ${color_2} 61%)`}}>
-        <div className='container__link'>
+const CollectionPreview = ({ title, items, history, match, routeName }) => (
+    <div className='container'>
+        <div className='container__link' onClick={() => history.push(`${match.path}/${routeName}`)}>
             <h2 className='container__heading'>{ title.toUpperCase() } &rarr;</h2>
             <div className='container__link--circle'></div>
         </div> 
@@ -20,4 +22,4 @@ const CollectionPreview = ({ title, items, color_1, color_2 }) => (
     </div>
 )
 
-export default CollectionPreview;
+export default withRouter(CollectionPreview);
